@@ -43,7 +43,7 @@ client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
   console.log("بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ");
     console.log(client.guilds.cache.map(c => `${c.name} : ${c.me.hasPermission(8)} : ${c.memberCount}`));
-  client.user.setActivity(`PEKOB.NET | ${prefix}help`,{type: "STREAMING", url: " https://discord.gg/UFTXkxRrWT"});
+  client.user.setActivity(`PEKOB.NET | ${prefix}help`, {type: "STREAMING", url: " https://twitch.tv/UFTXkxRrWT"});
   console.log(`Logined`);
 });
 //code by Uunkn0wnN
@@ -1098,7 +1098,7 @@ const invite = new disbut.MessageButton()
 .setLabel('Invite')
 .setStyle('url')
 .setEmoji('951665482400931930')
-.setURL('https://discord.com/api/oauth2/authorize?client_id=1014606828715380856&permissions=8&scope=bot%20applications.commands');
+.setURL('https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands');
 
 
 const support = new disbut.MessageButton()
