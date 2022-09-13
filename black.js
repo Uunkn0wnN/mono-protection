@@ -23,7 +23,6 @@ var table = require("table").table;
 const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
 const Discord = require("discord.js");
 const { parse } = require("twemoji-parser");
-const ytdl = require("ytdl-core");
 const cmd = require("node-cmd");
 const queue = new Map();
 const imdb = require("imdb-api");
