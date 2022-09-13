@@ -43,7 +43,7 @@ client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
   console.log("بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ");
     console.log(client.guilds.cache.map(c => `${c.name} : ${c.me.hasPermission(8)} : ${c.memberCount}`));
-  client.user.setActivity(`PEKOB.NET | ${prefix}help, type: "STREAMING", url: " https://discord.gg/UFTXkxRrWT"`);
+  client.user.setActivity(`PEKOB.NET | ${prefix}help`,{type: "STREAMING", url: " https://discord.gg/UFTXkxRrWT"});
   console.log(`Logined`);
 });
 //code by Uunkn0wnN
