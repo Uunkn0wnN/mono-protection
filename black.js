@@ -378,7 +378,7 @@ client.on("message", message => {
         .setThumbnail(message.guild.iconURL())
         .setTitle("Error :x:")
         .setDescription("**SORRY JUST FOR ONWER SHIP**")
-        .setColor("9e1c36")
+        .setColor("#00F0FF")
         .setFooter(`${client.user.username}`)
         .setTimestamp()
       return message.channel.send(embeeed);
@@ -389,14 +389,14 @@ client.on("message", message => {
         .setTitle("Erorr :x:")
         .setDescription("**SEND NUMBER**")
         .setFooter("Protection Yarz system")
-        .setColor("9e1c36");
+        .setColor("#00F0FF");
 
       {
         let black2 = new Discord.MessageEmbed()
           .setThumbnail(message.guild.iconURL())
           .setTitle("Error :x:")
           .setDescription("**JUST SEND NUMBER*")
-          .setColor("9e1c36");
+          .setColor("#00F0FF");
  
         if (message.content.startsWith(prefix + "anti ban")) {
           if (!num) return message.channel.send(black);
@@ -412,7 +412,7 @@ client.on("message", message => {
               .addField("By", message.author.tag)
               .addField("Server", message.guild.name)
               .setFooter("Protection Yarz system")
-              .setColor("RED");
+              .setColor("#00F0FF");
             message.channel.send(banLimit1);
           }
         }
@@ -429,7 +429,7 @@ client.on("message", message => {
             .addField("By", message.author.tag)
             .addField("Server", message.guild.name)
             .setFooter("Protection Yarz system")
-            .setColor("RED");
+            .setColor("#00F0FF");
           message.channel.send(embedddd);
         }
 if (message.content.startsWith(prefix + "anti roleD")) {
@@ -445,7 +445,7 @@ if (message.content.startsWith(prefix + "anti roleD")) {
             .addField("By", message.author.tag)
             .addField("Server", message.guild.name)
             .setFooter("Protection Yarz system")
-            .setColor("RED");
+            .setColor("#00F0FF");
           message.channel.send(embeddddddddd);
         }
         if (message.content.startsWith(prefix + "anti roleC")) {
@@ -460,7 +460,7 @@ if (message.content.startsWith(prefix + "anti roleD")) {
             .addField("By", message.author.tag)
             .addField("Server", message.guild.name)
             .setFooter("Protection Yarz system")
-            .setColor("RED");
+            .setColor("#00F0FF");
           message.channel.send(embeed);
         }
         if (message.content.startsWith(prefix + "anti channelD")) {
@@ -476,7 +476,7 @@ if (message.content.startsWith(prefix + "anti roleD")) {
             .addField("By", message.author.tag)
             .addField("Server", message.guild.name)
             .setFooter("Protection Yarz system")
-            .setColor("RED");
+            .setColor("#00F0FF");
           message.channel.send(embeeed);
         }
 if (message.content.startsWith(prefix + "anti channelC")) {
@@ -492,7 +492,7 @@ if (message.content.startsWith(prefix + "anti channelC")) {
             .addField("By", message.author.tag)
             .addField("Server", message.guild.name)
             .setFooter("Protection Yarz system")
-            .setColor("RED");
+            .setColor("#00F0FF");
           message.channel.send(embd);
         }
         if (message.content.startsWith(prefix + "anti time")) {
@@ -506,7 +506,7 @@ if (message.content.startsWith(prefix + "anti channelC")) {
             .addField("By", message.author.tag)
             .addField("Server", message.guild.name)
             .setFooter("Protection Yarz system")
-            .setColor("RED");
+            .setColor("#00F0FF");
           message.channel.send(emb);
         }
       }
@@ -1027,7 +1027,7 @@ client.on('message', message => {
     let mention = new Discord.MessageEmbed()
     .setAuthor(message.author.username, message.author.displayAvatarURL())
     .setThumbnail(message.guild.iconURL())
-    .setColor('RANDOM')
+    .setColor('#00F0FF')
     .setDescription(`**Hey There,\nSee my all commands by \`${prefix}help\`**`)
     message.channel.send(mention)
   }
@@ -1052,7 +1052,7 @@ client.on("message", async message => {
       cooldown.delete(message.author.id);
     }, cdtime * 1000);
     let help = new Discord.MessageEmbed()
-      .setColor("#FF0000")
+      .setColor("#00F0FF")
       .setImage('https://cdn.discordapp.com/attachments/779341728695451678/892247350586773524/standard_16.gif')
       .setAuthor(client.user.username, client.user.displayAvatarURL())
       .setThumbnail(client.user.avatarURL())
@@ -1172,7 +1172,7 @@ client.on("message", message => {
         m.voice.setChannel(author);
       })
     const embed = new Discord.MessageEmbed()
-        .setColor('#FF0000')
+        .setColor('#00F0FF')
         .setThumbnail(message.author.avatarURL())
         .setAuthor(message.author.username,message.author.avatarURL())
         .setTitle("**Done Chek Move all**")
@@ -1225,7 +1225,7 @@ client.on('message', message => {
    var args = message.content.split(" ").slice(1).join(" ");
    if(!args) return message.reply("**Please Type Message For say Embed**")
    const embed = new Discord.MessageEmbed()
-        .setColor('RANDOM')
+        .setColor('#00F0FF')
         .setThumbnail(message.author.avatarURL())
         .setAuthor(message.author.username,message.author.avatarURL())
         .setDescription(args)
@@ -1287,7 +1287,7 @@ client.on('message',message =>{
   var embed = new Discord.MessageEmbed()
   .setThumbnail(message.author.avatarURL())
   .setAuthor(message.guild.name,message.guild.iconURL())
-  .setColor("#FF0000")
+  .setColor("#00F0FF")
   .setDescription(`${invites.join(`\n`)+'\n\n**By:** '+message.author}`)
            message.channel.send({ embed: embed });
    
@@ -1361,7 +1361,7 @@ c.createOverwrite(men.id, {
 })
     })
 const embed = new Discord.MessageEmbed()
-.setColor("RANDOM")
+.setColor("#00F0FF")
 .setDescription(`**
  <@${men.id}>
 YOU CANT JOIN THE VOICE ROOM
@@ -1370,7 +1370,7 @@ BANNER : <@${rw.author.id}> **`)
           
 client.users.cache.get(men.id).send(embed)
 const Embed11 = new Discord.MessageEmbed()
-.setColor("RANDOM")
+.setColor("#00F0FF")
 .setAuthor(rw.guild.name, rw.guild.iconURL())
 .setDescription(`          <@${men.id}>
 BANNED
@@ -1397,7 +1397,7 @@ if (!rw.member.hasPermission("MOVE_MEMBERS")) return rw.channel.send("**YOU DONT
  })
     })
 const embed = new Discord.MessageEmbed()
-.setColor("RANDOM")
+.setColor("#00F0FF")
 .setDescription(`**
  <@${men.id}>
  Welcome Back
@@ -1406,7 +1406,7 @@ Back With : <@${rw.author.id}> **`)
           
 client.users.cache.get(men.id).send(embed)
 const Embed11 = new Discord.MessageEmbed()
-.setColor("RANDOM")
+.setColor("#00F0FF")
 .setAuthor(rw.guild.name, rw.guild.iconURL())
 .setDescription(`          <@${men.id}>
 GO FOR VOICE NOW
@@ -1429,7 +1429,7 @@ if(!mention) return message.channel.send(`**• | Usage:** ${prefix}vmute \`\`@N
 if(!mention.voice.channel) return message.channel.send(`⛔ | *${mention.user.tag}* is not in a voice channel!`);
 mention.voice.setMute(true).then(() => {
 const embed = new Discord.MessageEmbed()
-        .setColor('#FF0000')
+        .setColor('#00F0FF')
         .setThumbnail(message.author.avatarURL())
         .setAuthor(message.author.username,message.author.avatarURL())
         .setTitle(`Successfully Muted ${mention} :+1:`)
@@ -1447,7 +1447,7 @@ if(!mention) return message.channel.send(`**• | Usage:** ${prefix}unvmute \`\`
 if(!mention.voice.channel) return message.channel.send(`⛔ | *${mention.user.tag}* is not in a voice channel!`);
 mention.voice.setMute(false).then(() => {
 const embed = new Discord.MessageEmbed()
-        .setColor('#FF0000')
+        .setColor('#00F0FF')
         .setThumbnail(message.author.avatarURL())
         .setAuthor(message.author.username,message.author.avatarURL())
         .setTitle(`Successfully UnMuted ${mention} :+1:`)
@@ -1477,7 +1477,7 @@ client.on("message", message => {
     }, cdtime * 1000);
     if (message.author.id !== message.guild.ownerID) return
     let embed = new Discord.MessageEmbed()
-      .setColor("RED")
+      .setColor("#00F0FF")
       .setAuthor(message.author.username,message.author.avatarURL())
       .setFooter(`${client.user.username}`)
       .setTimestamp()
@@ -1520,7 +1520,7 @@ client.on("message", message => {
         "**You must have a higher role use this command**"
       );
     let embed = new Discord.MessageEmbed()
-      .setColor("RED")
+      .setColor("#00F0FF")
       .setAuthor(message.author.username,message.author.avatarURL())
       .setFooter(`${client.user.username}`)
       .setTimestamp()
@@ -1598,7 +1598,7 @@ client.on("message", message => {
       4
     );
     var embed = new Discord.MessageEmbed()
-      .setColor("RANDOM")
+      .setColor("#00F0FF")
       .setTitle(":tools: Permissions")
       .addField("Your Permissions:", perms);
     message.channel.send({ embed: embed });
@@ -1624,7 +1624,7 @@ client.on("message", message => {
   .addField("Name User", user)
   .addField("Nickname New", nick)
   .addField("Moderation", message.author.tag)
-  .setColor("RANDOM")
+  .setColor("#00F0FF")
   message.channel.send(blackj)
   }
   });
@@ -1641,7 +1641,7 @@ var Black = new Discord.MessageEmbed()
 .setFooter(message.author.username, message.author.avatarURL())
 .addField('Server Name',`${message.guild.name}`)
 .addField('Boost Count',` ${message.guild.premiumSubscriptionCount}`)
-.setColor("RANDOM")
+.setColor("#00F0FF")
 message.channel.send(Black);
 }); 
 //code by Uunkn0wnN
@@ -1695,7 +1695,7 @@ client.on('message', message => {
                 var Date15= new Discord.MessageEmbed()
                 .setThumbnail("https://i.imgur.com/ib3n4Hq.png") 
                 .setTitle( "TIME AND DATE")
-                .setColor('RANDOM')
+                .setColor('#00F0FF')
                 .setFooter("Protection Yarz system")
                 .setFooter(message.author.username, message.author.avatarURL())
                  .addField('Time',
@@ -1712,7 +1712,7 @@ client.on("message", message => {
     if (message.content.startsWith(prefix + "rules")) {
       if (!message.member.hasPermission("MANAGE_GUILD")) return;
      const blackjack = new Discord.MessageEmbed() 
-         .setColor("BLACK")
+         .setColor("#00F0FF")
          .setTitle("RULES")
          .setImage("https://media.discordapp.net/attachments/644265220449107968/646324616536784897/image0-16.png")
          .setFooter("RULES")
@@ -1758,7 +1758,7 @@ client.on("message", async message => {
       .addField("Message", `${topic}`)
       .addField("Channel", message.channel.name)
       .addField("By", message.author.tag)
-      .setColor("RANDOM")
+      .setColor("#00F0FF")
       .setFooter("BY Yarz Protection");
     message.channel.send(embed);
   }
@@ -1893,7 +1893,7 @@ client.on("message", message => {
           .addField("Guild name", message.guild.name)
           .addField("Channel", `${message.channel.name}`)
           .addField("By", `<@${message.author.id}>`, true)
-          .setColor("RANDOM");
+          .setColor("#00F0FF");
         return message.channel.send(embed);
       });
   }
@@ -1912,7 +1912,7 @@ client.on("message", message => {
           .addField("Guild name", message.guild.name)
           .addField("Channel", message.channel.name)
           .addField("By", `<@${message.author.id}>`, true)
-          .setColor("RANDOM");
+          .setColor("#00F0FF");
         return message.channel.send(embed);
       });
   }
@@ -1931,7 +1931,7 @@ client.on("message", message => {
       .addField("Guild name", message.guild.name)
       .addField("Channel", message.channel.name)
       .addField("Moderation", `<@${message.author.id}>`, true)
-      .setColor("RANDOM");
+      .setColor("#00F0FF");
     message.channel.send(embed).then(bj => {
       bj.react("🔒");
     });
@@ -1951,7 +1951,7 @@ client.on("message", message => {
       .addField("Guild name", message.guild.name)
       .addField("Channel", message.channel.name)
       .addField("Moderation", `<@${message.author.id}>`, true)
-      .setColor("RANDOM");
+      .setColor("#00F0FF");
     message.channel.send(embed).then(bj => {
       bj.react("🔓");
     });
@@ -1970,7 +1970,7 @@ var mention= message.mentions.members.first()
   let mute = new Discord.MessageEmbed()
   .setAuthor(message.author.username,message.author.avatarURL())
 .setDescription(`**${mention} | Has been Muted From The Server! **`)
-   .setColor('#000000')
+   .setColor('#00F0FF')
 .setTimestamp()
  
   .setFooter(mention.user.username,mention.user.avatarURL())
@@ -1993,7 +1993,7 @@ var mention= message.mentions.members.first()
   let unmute = new Discord.MessageEmbed()
   .setAuthor(message.author.username,message.author.avatarURL())
 .setDescription(`**${mention} | Has been UnMuted From The Server! **`)
-    .setColor('#000000')
+    .setColor('#00F0FF')
 .setTimestamp()
  
   .setFooter(mention.user.username,mention.user.avatarURL())
@@ -2033,7 +2033,7 @@ client.on("message", message => {
         .addField("**Bot**", `${heg.bot}`, true)
         .addField("**Status** ", heg.presence.status, true)
         .setFooter(`Replying to ${message.author.username}#${message.author.discriminator}`)
-        .setColor("RANDOM")      
+        .setColor("#00F0FF")      
         .setTimestamp()
  
     message.channel.send(embed);
@@ -2089,7 +2089,7 @@ client.on('message', message => {
          var args = message.content.split(" ").slice(1);
  if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('You need \`\`MANAGE_MESSAGES\`\` permission');
        const e = new Discord.MessageEmbed()
-       .setColor("#FF0000")
+       .setColor("#00F0FF")
        .setThumbnail(message.author.avatarURL())
        .addField("Moderation", message.author.tag)
        .setFooter(`Requested | ${message.author.tag}`, message.author.avatarURL())
@@ -2100,7 +2100,7 @@ client.on('message', message => {
   message.channel.bulkDelete(args[0]).then(() => {
     const embed = new Discord.MessageEmbed()
       .setThumbnail(message.author.avatarURL())
-      .setColor("#FF0000")
+      .setColor("#00F0FF")
       .setFooter(`Requested | ${message.author.tag}`, message.author.avatarURL())
       .setTimestamp()
       .setTitle(`Cleared ${args[0]} messages.`)  
@@ -2134,7 +2134,7 @@ client.on("message", async message => {
       try {
         muterole = await message.guild.roles.create({
           name: "Muted By Yarz Protection",
-          color: "#000000",
+          color: "#00F0FF",
           permissions: []
         });
         message.guild.channels.cache.forEach(async (channel, id) => {
@@ -2154,7 +2154,7 @@ client.on("message", async message => {
     const embed500 = new Discord.MessageEmbed()
       .setTitle("Muted Ads")
       .addField(`**  You Have Been Muted **`, `**Reason : Uses mention Everyone Or Here**`)
-      .setColor("c91616")
+      .setColor("#00F0FF")
       .setThumbnail(message.author.avatarURL())
       .setAuthor(message.author.username, message.author.avatarURL())
       .setFooter(`${message.guild.name} `);
@@ -2225,7 +2225,7 @@ client.on("message", black => {
       .addField("**Roles:**", ` ${black.guild.roles.cache.size}`)
       .addField("AFK Timeout", black.guild.afkTimeout / 60 + ' minutes', true)
       .setFooter(`Requested | ${black.author.tag}`, black.author.avatarURL())
-      .setColor("RANDOM")
+      .setColor("#00F0FF")
       .setTimestamp();
     black.channel.send(blackjack);
   }
@@ -2249,7 +2249,7 @@ client.on("message", message => {
     .addField('Reason ', reason)
     .addField('Moderation', message.author.tag)
     .setFooter('Yarz Protection')
-    .setColor("RANDOM")
+    .setColor("#00F0FF")
     message.channel.send(kick)
     tag.kick();
   }})
@@ -2272,7 +2272,7 @@ client.on("message", message => {
     .addField('Reason ', reason)
     .addField('Moderation', message.author.tag)
     .setFooter('Yarz Protection')
-    .setColor("RANDOM")
+    .setColor("#00F0FF")
     message.channel.send(ban)
     tag.ban();
   }})
@@ -2284,7 +2284,7 @@ client.on('message', message => {
     .setURL("https://discord.gg/bokep")
     .setTimestamp()
     .setFooter(`Requested By | ${message.author.username}`)
-    .setColor("RANDOM")
+    .setColor("#00F0FF")
     message.channel.send({embed})
   }
 });
@@ -2295,7 +2295,7 @@ client.on('message', message => {
     .setURL(`https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands`)
     .setTimestamp()
     .setFooter(`Requested By | ${message.author.username}`)
-    .setColor("RANDOM")
+    .setColor("#00F0FF")
     message.channel.send({embed})
   }
 });
@@ -2328,7 +2328,7 @@ let embed = new Discord.MessageEmbed()
 .addField('Channel', `${room}`)
 .addField('Server', `${message.guild.name}`)
 .addField('Requested By', `${message.author}`)
-.setColor("RANDOM")
+.setColor("#00F0FF")
 .setFooter(`${client.user.username}`)
 .setTimestamp()
 message.channel.send(embed)
@@ -2383,7 +2383,7 @@ client.on("messageDelete", message => {
  
   let messageDelete = new Discord.MessageEmbed()
     .setTitle("**[MESSAGE DELETE]**")
-    .setColor("RED")
+    .setColor("#00F0FF")
     .setThumbnail(message.author.displayAvatarURL())
     .setDescription(
       `**\n**:wastebasket: Successfully \`\`DELETE\`\` **MESSAGE** In ${message.channel}\n\n**Channel:** \`\`${message.channel.name}\`\` (ID: ${message.channel.id})\n**Message ID:** ${message.id}\n**Sent By:** <@${message.author.id}> (ID: ${message.author.id})\n**Message:**\n\`\`\`${message}\`\`\``
@@ -2454,7 +2454,7 @@ client.on("channelCreate", channel => {
         `**\n**:white_check_mark: Successfully \`\`CREATE\`\` **${roomType}** channel.\n\n**Channel Name:** \`\`${channel.name}\`\` (ID: ${channel.id})\n**By:** <@${userID}> (ID: ${userID})`
       )
       .setTimestamp()
-      .setColor("GREEN")
+      .setColor("#00F0FF")
       .setFooter(channel.guild.name, channel.guild.iconURL());
     logChannel.send(channelCreate)
   })
@@ -2504,7 +2504,7 @@ client.on("channelUpdate", (oldChannel, newChannel) => {
       let newTopic = new Discord.MessageEmbed()
         .setTitle("**[CHANNEL EDIT]**")
         .setThumbnail(userAvatar)
-        .setColor("BLUE")
+        .setColor("#00F0FF")
         .setDescription(
           `**\n**:wrench: Successfully Edited **${channelType}** Channel Topic\n\n**Old Topic:**\n\`\`\`${oldChannel.topic ||
           "NULL"}\`\`\`\n**New Topic:**\n\`\`\`${newChannel.topic ||
@@ -2621,7 +2621,7 @@ client.on("guildBanRemove", (guild, user) => {
     let unBanInfo = new Discord.MessageEmbed()
       .setTitle("**[UNBANNED]**")
       .setThumbnail(userAvatar)
-      .setColor("GREEN")
+      .setColor("#00F0FF")
       .setDescription(
         `**\n**:unlock: Successfully \`\`UNBANNED\`\` **${user.username}** From the server\n\n**User:** <@${user.id}> (ID: ${user.id})\n**By:** <@${userID}> (ID: ${userID})`
       )
@@ -2658,7 +2658,7 @@ client.on("roleCreate", role => {
       .setDescription(
         `**\n**:white_check_mark: Successfully \`\`CREATE\`\` Role.\n\n**Role Name:** \`\`${role.name}\`\` (ID: ${role.id})\n**By:** <@${userID}> (ID: ${userID})`
       )
-      .setColor("GREEN")
+      .setColor("#00F0FF")
       .setTimestamp()
       .setFooter(role.guild.name, role.guild.iconURL());
  
@@ -2690,7 +2690,7 @@ client.on("roleDelete", role => {
       .setDescription(
         `**\n**:white_check_mark: Successfully \`\`DELETE\`\` Role.\n\n**Role Name:** \`\`${role.name}\`\` (ID: ${role.id})\n**By:** <@${userID}> (ID: ${userID})`
       )
-      .setColor("RED")
+      .setColor("#00F0FF")
       .setTimestamp()
       .setFooter(role.guild.name, role.guild.iconURL());
  
@@ -2720,7 +2720,7 @@ client.on("roleUpdate", (oldRole, newRole) => {
       let roleUpdateName = new Discord.MessageEmbed()
         .setTitle("**[ROLE NAME UPDATE]**")
         .setThumbnail(userAvatar)
-        .setColor("BLUE")
+        .setColor("#00F0FF")
         .setDescription(
           `**\n**:white_check_mark: Successfully \`\`EDITED\`\` Role Name.\n\n**Old Name:** \`\`${oldRole.name}\`\`\n**New Name:** \`\`${newRole.name}\`\`\n**Role ID:** ${oldRole.id}\n**By:** <@${userID}> (ID: ${userID})`
         )
@@ -2730,12 +2730,12 @@ client.on("roleUpdate", (oldRole, newRole) => {
       logChannel.send(roleUpdateName);
     }
     if (oldRole.hexColor !== newRole.hexColor) {
-      if (oldRole.hexColor === "#000000") {
+      if (oldRole.hexColor === "#00F0FF") {
         var oldColor = "`Default`";
       } else {
         var oldColor = oldRole.hexColor;
       }
-      if (newRole.hexColor === "#000000") {
+      if (newRole.hexColor === "#00F0FF") {
         var newColor = "`Default`";
       } else {
         var newColor = newRole.hexColor;
@@ -2744,7 +2744,7 @@ client.on("roleUpdate", (oldRole, newRole) => {
       let roleUpdateColor = new Discord.MessageEmbed()
         .setTitle("**[ROLE COLOR UPDATE]**")
         .setThumbnail(userAvatar)
-        .setColor("BLUE")
+        .setColor("#00F0FF")
         .setDescription(
           `**\n**:white_check_mark: Successfully \`\`EDITED\`\` **${oldRole.name}** Role Color.\n\n**Old Color:** ${oldColor}\n**New Color:** ${newColor}\n**Role ID:** ${oldRole.id}\n**By:** <@${userID}> (ID: ${userID})`
         )
@@ -2784,7 +2784,7 @@ client.on('guildMemberUpdate', (oldMember, newMember) => {
 			let updateNickname = new Discord.MessageEmbed()
 			.setTitle('**[UPDATE MEMBER NICKNAME]**')
 			.setThumbnail(userAvatar)
-			.setColor('BLUE')
+			.setColor('#00F0FF')
 			.setDescription(`**\n**:spy: Successfully \`\`CHANGE\`\` Member Nickname.\n\n**User:** ${oldMember} (ID: ${oldMember.id})\n**Old Nickname:** ${oldNM}\n**New Nickname:** ${newNM}\n**By:** <@${userID}> (ID: ${userID})`)
 			.setTimestamp()
 			.setFooter(oldMember.guild.name, oldMember.guild.iconURL())
@@ -2800,7 +2800,7 @@ client.on('guildMemberUpdate', (oldMember, newMember) => {
 			let roleAdded = new Discord.MessageEmbed()
 			.setTitle('**[ADDED ROLE TO MEMBER]**')
 			.setThumbnail(oldMember.guild.iconURL())
-			.setColor('GREEN')
+			.setColor('#00F0FF')
 			.setDescription(`**\n**:white_check_mark: Successfully \`\`ADDED\`\` Role to **${oldMember.user.username}**\n\n**User:** <@${oldMember.id}> (ID: ${oldMember.user.id})\n**Role:** \`\`${role.name}\`\` (ID: ${role.id})\n**By:** <@${userID}> (ID: ${userID})`)
 			.setTimestamp()
 			.setFooter(userTag, userAvatar)
@@ -2816,7 +2816,7 @@ client.on('guildMemberUpdate', (oldMember, newMember) => {
 			let roleAdded = new Discord.MessageEmbed()
 			.setTitle('**[ADDED ROLE TO MEMBER]**')
 			.setThumbnail(oldMember.guild.iconURL())
-			.setColor('GREEN')
+			.setColor('#00F0FF')
 			.setDescription(`**\n**:white_check_mark: Successfully \`\`ADDED\`\` Role to **${oldMember.user.username}**\n\n**User:** <@${oldMember.id}> (ID: ${oldMember.user.id})\n**Role:** \`\`${role.name}\`\` (ID: ${role.id})\n**By:** <@${userID}> (ID: ${userID})`)
 			.setTimestamp()
 			.setFooter(userTag, userAvatar)
@@ -2832,7 +2832,7 @@ client.on('guildMemberUpdate', (oldMember, newMember) => {
 			let roleRemoved = new Discord.MessageEmbed()
 			.setTitle('**[REMOVED ROLE FROM MEMBER]**')
 			.setThumbnail(oldMember.guild.iconURL())
-			.setColor('RED')
+			.setColor('#00F0FF')
 			.setDescription(`**\n**:negative_squared_cross_mark: Successfully \`\`REMOVED\`\` Role from **${oldMember.user.username}**\n\n**User:** <@${oldMember.user.id}> (ID: ${oldMember.id})\n**Role:** \`\`${role.name}\`\` (ID: ${role.id})\n**By:** <@${userID}> (ID: ${userID})`)
 			.setTimestamp()
 			.setFooter(userTag, userAvatar)
@@ -2848,7 +2848,7 @@ client.on('guildMemberUpdate', (oldMember, newMember) => {
         let newOwner = new Discord.MessageEmbed()
 		.setTitle('**[UPDATE GUILD OWNER]**')
 		.setThumbnail(oldMember.guild.iconURL())
-		.setColor('GREEN')
+		.setColor('#00F0FF')
 		.setDescription(`**\n**:white_check_mark: Successfully \`\`TRANSFER\`\` The Owner Ship.\n\n**Old Owner:** <@${oldMember.user.id}> (ID: ${oldMember.user.id})\n**New Owner:** <@${newMember.user.id}> (ID: ${newMember.user.id})`)
 		.setTimestamp()
 		.setFooter(oldMember.guild.name, oldMember.guild.iconURL())
@@ -2876,7 +2876,7 @@ client.on('voiceStateUpdate', (voiceOld, voiceNew) => {
 			let serverMutev = new Discord.MessageEmbed()
 			.setTitle('**[VOICE MUTE]**')
 			.setThumbnail('https://images-ext-1.discordapp.net/external/pWQaw076OHwVIFZyeFoLXvweo0T_fDz6U5C9RBlw_fQ/https/cdn.pg.sa/UosmjqDNgS.png')
-			.setColor('RED')
+			.setColor('#00F0FF')
 			.setDescription(`**User:** ${voiceOld} (ID: ${voiceOld.id})\n**By:** <@${userID}> (ID: ${userID})\n**Channel:** \`\`${voiceOld.voiceChannel.name}\`\` (ID: ${voiceOld.voiceChannel.id})`)
 			.setTimestamp()
 			.setFooter(userTag, userAvatar)
@@ -2891,7 +2891,7 @@ client.on('voiceStateUpdate', (voiceOld, voiceNew) => {
 			let serverUnmutev = new Discord.MessageEmbed()
 			.setTitle('**[VOICE UNMUTE]**')
 			.setThumbnail('https://images-ext-1.discordapp.net/external/u2JNOTOc1IVJGEb1uCKRdQHXIj5-r8aHa3tSap6SjqM/https/cdn.pg.sa/Iy4t8H4T7n.png')
-			.setColor('GREEN')
+			.setColor('#00F0FF')
 			.setDescription(`**User:** ${voiceOld} (ID: ${voiceOld.id})\n**By:** <@${userID}> (ID: ${userID})\n**Channel:** \`\`${voiceOld.voiceChannel.name}\`\` (ID: ${voiceOld.voiceChannel.id})`)
 			.setTimestamp()
 			.setFooter(userTag, userAvatar)
@@ -2905,7 +2905,7 @@ client.on('voiceStateUpdate', (voiceOld, voiceNew) => {
 if(voiceOld.voiceChannelID !== voiceNew.voiceChannelID && !voiceOld.voiceChannel) {
         let voiceJoin = new Discord.MessageEmbed()
         .setTitle('**[JOIN VOICE ROOM]**')
-        .setColor('GREEN')
+        .setColor('#00F0FF')
         .setThumbnail(voiceOld.user.avatarURL())
         .setDescription(`**\n**:arrow_lower_right: Successfully \`\`JOIN\`\` To Voice Channel.\n\n**Channel:** \`\`${voiceNew.voiceChannel.name}\`\` (ID: ${voiceNew.voiceChannelID})\n**User:** ${voiceOld} (ID: ${voiceOld.id})`)
         .setTimestamp()
@@ -2917,7 +2917,7 @@ if(voiceOld.voiceChannelID !== voiceNew.voiceChannelID && !voiceOld.voiceChannel
     if(voiceOld.voiceChannelID !== voiceNew.voiceChannelID && !voiceNew.voiceChannel) {
         let voiceLeave = new Discord.MessageEmbed()
         .setTitle('**[LEAVE VOICE ROOM]**')
-        .setColor('GREEN')
+        .setColor('#00F0FF')
         .setThumbnail(voiceOld.user.avatarURL)
         .setDescription(`**\n**:arrow_upper_left: Successfully \`\`LEAVE\`\` From Voice Channel.\n\n**Channel:** \`\`${voiceOld.voiceChannel.name}\`\` (ID: ${voiceOld.voiceChannelID})\n**User:** ${voiceOld} (ID: ${voiceOld.id})`)
         .setTimestamp()
@@ -2929,7 +2929,7 @@ if(voiceOld.voiceChannelID !== voiceNew.voiceChannelID && !voiceOld.voiceChannel
 			let serverDeafv = new Discord.MessageEmbed()
 			.setTitle('**[VOICE DEAF]**')
 			.setThumbnail('https://images-ext-1.discordapp.net/external/7ENt2ldbD-3L3wRoDBhKHb9FfImkjFxYR6DbLYRjhjA/https/cdn.pg.sa/auWd5b95AV.png')
-			.setColor('RED')
+			.setColor('#00F0FF')
 			.setDescription(`**User:** ${voiceOld} (ID: ${voiceOld.id})\n**By:** <@${userID}> (ID: ${userID})\n**Channel:** \`\`${voiceOld.voiceChannel.name}\`\` (ID: ${voiceOld.voiceChannel.id})`)
 			.setTimestamp()
 			.setFooter(userTag, userAvatar)
@@ -2944,7 +2944,7 @@ if(voiceOld.serverDeaf === true && voiceNew.serverDeaf === false) {
 			let serverUndeafv = new Discord.MessageEmbed()
 			.setTitle('**[VOICE UNDEAF]**')
 			.setThumbnail('https://images-ext-2.discordapp.net/external/s_abcfAlNdxl3uYVXnA2evSKBTpU6Ou3oimkejx3fiQ/https/cdn.pg.sa/i7fC8qnbRF.png')
-			.setColor('GREEN')
+			.setColor('#00F0FF')
 			.setDescription(`**User:** ${voiceOld} (ID: ${voiceOld.id})\n**By:** <@${userID}> (ID: ${userID})\n**Channel:** \`\`${voiceOld.voiceChannel.name}\`\` (ID: ${voiceOld.voiceChannel.id})`)
 			.setTimestamp()
 			.setFooter(userTag, userAvatar)
@@ -2960,7 +2960,7 @@ if(voiceOld.serverDeaf === true && voiceNew.serverDeaf === false) {
         if(log[voiceOld, voiceOld.guild.id].onoff === 'Off') return;
 		let voiceLeave = new Discord.MessageEmbed()
 		.setTitle('**[CHANGED VOICE ROOM]**')
-		.setColor('GREEN')
+		.setColor('#00F0FF')
 		.setThumbnail(voiceOld.user.avatarURL())
 		.setDescription(`**\n**:repeat: Successfully \`\`CHANGED\`\` The Voice Channel.\n\n**From:** \`\`${voiceOld.voiceChannel.name}\`\` (ID: ${voiceOld.voiceChannelID})\n**To:** \`\`${voiceNew.voiceChannel.name}\`\` (ID: ${voiceNew.voiceChannelID})\n**User:** ${voiceOld} (ID: ${voiceOld.id})`)
 		.setTimestamp()
@@ -2976,7 +2976,7 @@ client.on("emojiCreate", function(emoji) {
      var update = emoji.guild.channels.cache.find(c => c.name === `${log[emoji.guild.id].channel}`);
   let embed = new Discord.MessageEmbed()
       .setAuthor(`${channel.guild.name}: Server Updated`, channel.guild.iconURL())
-    .setColor("BLUE")
+    .setColor("#00F0FF")
       .setDescription(`We have new emoji in the server => (${emoji})`)
 update.send(embed)
 });
@@ -2985,7 +2985,7 @@ client.on("emojiDelete", function(emoji) {
      var update = emoji.guild.channels.cache.find(c => c.name === `${log[emoji.guild.id].channel}`);
   let embed = new Discord.MessageEmbed()
       .setAuthor(`${channel.guild.name}: Server Updated`, channel.guild.iconURL())
-      .setColor("BLUE")
+      .setColor("#00F0FF")
       .setDescription(`We have new emoji in the server => (${emoji})`)
 update.send(embed)
 });
