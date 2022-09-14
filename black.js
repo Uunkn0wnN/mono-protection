@@ -43,7 +43,7 @@ client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
   console.log("بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ");
     console.log(client.guilds.cache.map(c => `${c.name} : ${c.me.hasPermission(8)} : ${c.memberCount}`));
-  client.user.setActivity("PEKOB.NET | ${prefix}help", {type: "STREAMING", url: "https://twitch.tv/UFTXkxRrWT"});
+  client.user.setActivity("PEKOB.NET", {type: "STREAMING", url: "https://twitch.tv/UFTXkxRrWT"});
   console.log(`Logined`);
 });
 //code by Uunkn0wnN
@@ -1063,27 +1063,27 @@ client.on("message", async message => {
     
 
 **🔐️ | __Security Commands__ :**
-${prefix}anti
-${prefix}toggles
-${prefix}settings
+> ${prefix}anti
+> ${prefix}toggles
+> ${prefix}settings
 
 **🔐 | __Public Commands__:**
-> \`${prefix}help\`, \`${prefix}boosts\`, \`${prefix}invite\`, \`${prefix}botinfo\`,
-> \`${prefix}support\`, \`${prefix}ping\`, \`${prefix}clear\`, \`${prefix}server\`,  
-> \`${prefix}user\`, \`${prefix}listemojis\`, \`${prefix}date\`, \`${prefix}hightRole\`,
-> \`${prefix}avatar\`, \`${prefix}se gif/static <emoji>\`, \`${prefix}my perms\`,  
-> \`${prefix}topinvites\`, \`${prefix}allbots\`,  \`${prefix}roles\`, \`${prefix}badge\`, 
+> \`${prefix}help\`┃ \`${prefix}boosts\`┃ \`${prefix}invite\`┃ \`${prefix}botinfo\`┃
+> \`${prefix}support\`┃ \`${prefix}ping\`┃ \`${prefix}clear\`┃ \`${prefix}server\`┃  
+> \`${prefix}user\`┃ \`${prefix}listemojis\`┃ \`${prefix}date\`┃ \`${prefix}hightRole\`┃
+> \`${prefix}avatar\`┃ \`${prefix}se gif/static <emoji>\`┃ \`${prefix}my perms\`┃  
+> \`${prefix}topinvites\`┃ \`${prefix}allbots\`┃  \`${prefix}roles\`┃ \`${prefix}badge\`┃ 
 
 
 **🔐 | __Moderation Commands__:**
 
-> \`${prefix}lock\`, \`${prefix}unlock\`, \`${prefix}kick\`, \`${prefix}ban\`, 
-> \`${prefix}unban[iduser/all]\`, \`${prefix}mute\`, \`${prefix}unmute\`, \`${prefix}settopic\`,
-> \`${prefix}bans\`, \`${prefix}nick\`, \`${prefix}close\`, \`${prefix}hide all\`, \`${prefix}open\`,      
-> \`${prefix}unhide all\`, \`${prefix}rules\`, \`${prefix}move\`, \`${prefix}help move\`, \`${prefix}embed\`,
-> \`${prefix}say\`, \`${prefix}setLog\`, \`${prefix}slowmode\`, \`${prefix}tempmute\`, \`${prefix}mvall\`,
-> \`${prefix}deafen\`, \`${prefix}undeafen\`, \`${prefix}vkick\`, \`${prefix}vmute\`, \`${prefix}unvmute\`, 
-> \`${prefix}vban\`, \`${prefix}unvban\`, \`${prefix}roleadd\`, \`${prefix}roleremove\`, \`${prefix}roleinfo\`,
+> \`${prefix}lock\`┃ \`${prefix}unlock\`┃ \`${prefix}kick\`┃ \`${prefix}ban\`┃ 
+> \`${prefix}unban[iduser/all]\`┃ \`${prefix}mute\`┃ \`${prefix}unmute\`┃ \`${prefix}settopic\`┃
+> \`${prefix}bans\`┃ \`${prefix}nick\`┃ \`${prefix}close\`┃ \`${prefix}hide all\`┃ \`${prefix}open\`┃      
+> \`${prefix}unhide all\`┃ \`${prefix}rules\`, \`${prefix}move\`┃ \`${prefix}help move\`┃ \`${prefix}embed\`┃
+> \`${prefix}say\`┃ \`${prefix}setLog\`┃ \`${prefix}slowmode\`┃ \`${prefix}tempmute\`┃ \`${prefix}mvall\`┃
+> \`${prefix}deafen\`┃ \`${prefix}undeafen\`┃ \`${prefix}vkick\`┃ \`${prefix}vmute\`┃ \`${prefix}unvmute\`┃ 
+> \`${prefix}vban\`┃ \`${prefix}unvban\`┃ \`${prefix}roleadd\`┃ \`${prefix}roleremove\`┃ \`${prefix}roleinfo\`┃
 
 
 
@@ -1098,7 +1098,7 @@ const invite = new disbut.MessageButton()
 .setLabel('Invite')
 .setStyle('url')
 .setEmoji('951665482400931930')
-.setURL('https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands');
+.setURL('https://discord.com/api/oauth2/authorize?client_id=900035170659360861&permissions=8&scope=bot%20applications.commands');
 
 
 const support = new disbut.MessageButton()
@@ -1482,17 +1482,17 @@ client.on("message", message => {
       .setFooter(`${client.user.username}`)
       .setTimestamp()
       .setDescription(`
-**Security Number**
-\`${prefix}anti kick\`: **Number**
-\`${prefix}anti ban\`: **Number**
-\`${prefix}anti channelD\`: **Number**
-\`${prefix}anti channelC\`: **Number**
-\`${prefix}anti roleD\`: **Number**
-\`${prefix}anti roleC\`: **Number**
-**Security On/Off**
-\`${prefix}antibots\`: **on-off**
-**Security**
-\`${prefix}settings\`
+**__Security Number__**
+> \`${prefix}anti kick\`: **Number**
+> \`${prefix}anti ban\`: **Number**
+> \`${prefix}anti channelD\`: **Number**
+> \`${prefix}anti channelC\`: **Number**
+> \`${prefix}anti roleD\`: **Number**
+> \`${prefix}anti roleC\`: **Number**
+**__Security On/Off__**
+> \`${prefix}antibots\`: **on-off**
+**__Security__**
+> \`${prefix}settings\`
       `)
       .setThumbnail(message.member.user.displayAvatarURL({ dynamic: true }));
 
@@ -1525,13 +1525,13 @@ client.on("message", message => {
       .setFooter(`${client.user.username}`)
       .setTimestamp()
       .setDescription(`
-\`${prefix}tban on/off\`
-\`${prefix}tkick on/off\`
-\`${prefix}tChannelC on/off\`
-\`${prefix}tChannelD on/off\`
-\`${prefix}troleC on/off\`
-\`${prefix}troleD on/off\`
-\`${prefix}togglelog on/off\`
+> \`${prefix}tban on/off\`
+> \`${prefix}tkick on/off\`
+> \`${prefix}tChannelC on/off\`
+> \`${prefix}tChannelD on/off\`
+> \`${prefix}troleC on/off\`
+> \`${prefix}troleD on/off\`
+> \`${prefix}togglelog on/off\`
       `)
       .setThumbnail(message.member.user.displayAvatarURL({ dynamic: true }));
     message.channel.send({ embed });
@@ -2241,7 +2241,7 @@ client.on("message", message => {
     if(!args) return message.reply('**Please Mention**')
     if(!reason) return message.reply('**Write Reason For Kick Member**')
  
-    var blackjack = 'Black sestam'
+    var blackjack = 'Yarz Protection'
     const kick = new Discord.MessageEmbed()
     .setTitle('**Kicked In a Server**')
     .addField('Guild', message.guild.name)
@@ -2289,7 +2289,7 @@ client.on('message', message => {
   }
 });
 client.on('message', message => {
-  if(message.content.startsWith(`b!invite`)){
+  if(message.content.startsWith(`${prefix}invite`)){
     var embed = new Discord.MessageEmbed()
     .setTitle("Click Here")
     .setURL(`https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands`)
