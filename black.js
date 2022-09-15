@@ -43,7 +43,7 @@ client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
   console.log("بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ");
     console.log(client.guilds.cache.map(c => `${c.name} : ${c.me.hasPermission(8)} : ${c.memberCount}`));
-  client.user.setActivity("PEKOB.NET", {type: "STREAMING", url: "https://twitch.tv/UFTXkxRrWT"});
+  client.user.setActivity("PEKOB.NET 10K MEMBER 🔥", {type: "STREAMING", url: "https://twitch.tv/UFTXkxRrWT"});
   console.log(`Logined`);
 });
 //code by Uunkn0wnN
@@ -1229,6 +1229,7 @@ client.on('message', message => {
         .setThumbnail(message.author.avatarURL())
         .setAuthor(message.author.username,message.author.avatarURL())
         .setDescription(args)
+        .setFooter(`[PEKOB.NET](https:discord.gg/bokep)`)
         message.channel.send(embed);
 }
 });
@@ -2128,7 +2129,7 @@ client.on("message", async message => {
     message.delete();
     var command = message.content.split(" ")[0];
     let muterole = message.guild.roles.cache.find(
-      role => role.name === `Muted By BlackSestam`
+      role => role.name === `Muted By Yarz Protection`
     );
     if (!muterole) {
       try {
