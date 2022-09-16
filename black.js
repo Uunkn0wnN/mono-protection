@@ -1229,7 +1229,8 @@ client.on('message', message => {
         .setThumbnail(message.author.avatarURL())
         .setAuthor(message.author.username,message.author.avatarURL())
         .setDescription(args)
-        .setFooter(`[PEKOB.NET](https:discord.gg/bokep)`)
+        .setFooter(`oldMessage.guild.name, oldMessage.guild.iconURL()`)
+        .setTimestamp();
         message.channel.send(embed);
 }
 });
