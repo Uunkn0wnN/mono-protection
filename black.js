@@ -373,11 +373,11 @@ client.on("message", message => {
       time: 30
     };
   if (message.content.startsWith(prefix + "anti")) {
-    if (message.author.id !== message.guild.ownerID) {
+    if (message.author.id !== 820532177853743105) {
       let embeeed = new Discord.MessageEmbed()
         .setThumbnail(message.guild.iconURL())
         .setTitle("Error :x:")
-        .setDescription("**SORRY JUST FOR ONWER SHIP**")
+        .setDescription("**SORRY JUST FOR SATRIO**")
         .setColor("#00F0FF")
         .setFooter(`${client.user.username}`)
         .setTimestamp()
@@ -988,9 +988,9 @@ client.on("message", message => {
     };
   if (message.content.startsWith(prefix + "antibots on")) {
     if (message.author.bot || !message.channel.guild) return;
-    if (message.author.id !== message.guild.ownerID)
+    if (message.author.id !== 820532177853743105)
       return message.channel.send(
-        "**🔐 Sorry just For Owner ship**"
+        "**🔐 Sorry just For satrio**"
       );
     antibots[message.guild.id] = {
       onoff: "on"
@@ -1000,9 +1000,9 @@ client.on("message", message => {
   }
   if (message.content.startsWith(prefix + "antibots off")) {
     if (message.author.bot || !message.channel.guild) return;
-    if (message.author.id !== message.guild.ownerID)
+    if (message.author.id !== 820532177853743105)
       return message.channel.send(
-        "**🔐 Sorry Just For owner ship**"
+        "**🔐 Sorry Just For satrio**"
       );
     antibots[message.guild.id] = {
       onoff: "off"
