@@ -1229,7 +1229,7 @@ client.on('message', message => {
         .setThumbnail(message.author.avatarURL())
         .setAuthor(message.author.username,message.author.avatarURL())
         .setDescription(args)
-        .setFooter(`oldMessage.guild.name, oldMessage.guild.iconURL()`)
+        .setFooter(`PEKOB.NET`)
         .setTimestamp();
         message.channel.send(embed);
 }
