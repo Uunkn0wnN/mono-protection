@@ -988,9 +988,9 @@ client.on("message", message => {
     };
   if (message.content.startsWith(prefix + "antibots on")) {
     if (message.author.bot || !message.channel.guild) return;
-    if (message.author.id !== 820532177853743105)
+    if (message.author.id !== message.guild.ownerID)
       return message.channel.send(
-        "**🔐 Sorry just For satrio**"
+        "**🔐 Sorry just For owner server**"
       );
     antibots[message.guild.id] = {
       onoff: "on"
@@ -1000,9 +1000,9 @@ client.on("message", message => {
   }
   if (message.content.startsWith(prefix + "antibots off")) {
     if (message.author.bot || !message.channel.guild) return;
-    if (message.author.id !== 820532177853743105)
+    if (message.author.id !== message.guild.ownerID)
       return message.channel.send(
-        "**🔐 Sorry Just For satrio**"
+        "**🔐 Sorry Just For owner server**"
       );
     antibots[message.guild.id] = {
       onoff: "off"
