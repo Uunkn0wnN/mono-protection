@@ -43,7 +43,7 @@ client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
   console.log("بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ");
     console.log(client.guilds.cache.map(c => `${c.name} : ${c.me.hasPermission(8)} : ${c.memberCount}`));
-  client.user.setActivity("PEKOB.NET 12K MEMBER 🔥", {type: "STREAMING", url: "https://twitch.tv/UFTXkxRrWT"});
+  client.user.setActivity("PEKOB.NET 13K MEMBER 🔥", {type: "STREAMING", url: "https://twitch.tv/UFTXkxRrWT"});
   console.log(`Logined`);
 });
 //code by Uunkn0wnN
@@ -377,7 +377,7 @@ client.on("message", message => {
       let embeeed = new Discord.MessageEmbed()
         .setThumbnail(message.guild.iconURL())
         .setTitle("Error :x:")
-        .setDescription("**SORRY JUST FOR SATRIO**")
+        .setDescription("**SORRY JUST FOR OWNNER**")
         .setColor("#00F0FF")
         .setFooter(`${client.user.username}`)
         .setTimestamp()
@@ -1108,10 +1108,10 @@ const support = new disbut.MessageButton()
 .setURL('https://discord.gg/bokep');
 
 const website = new disbut.MessageButton()
-.setLabel('Website')
+.setLabel('Instagram')
 .setStyle('url')
 .setEmoji('905888428594429973')
-.setURL('https://uunkn0wnn.github.io/Nazarick-Clan-/');
+.setURL('https://instagram.com/22.1447');
 
 
 const trash = new disbut.MessageButton()
@@ -1226,8 +1226,8 @@ client.on('message', message => {
    if(!args) return message.reply("**Please Type Message For say Embed**")
    const embed = new Discord.MessageEmbed()
         .setColor('#00F0FF')
-        .setThumbnail(message.author.avatarURL())
-        .setAuthor(message.author.username,message.author.avatarURL())
+        .setThumbnail("https://cdn.discordapp.com/icons/879889675018453122/784480d7faf5f92e63b96bb2a376578f.webp")
+        .setAuthor('---------')
         .setDescription(args)
         .setFooter(`PEKOB.NET`)
         .setTimestamp();
